@@ -9,10 +9,10 @@ import java.io.InputStream;
 
 @Configuration
 public class MyConfig {
-    @Value("${coffee.type}")
-    private String type;
-    @Value("#{T(java.lang.System).in}")
-    private InputStream inputStream;
+//    @Value("${coffee.type}")
+//    private String type;
+//    @Value("#{T(java.lang.System).in}")
+//    private InputStream inputStream;
 
     @Bean
     public CoffeeService coffeeService(){
@@ -21,7 +21,7 @@ public class MyConfig {
 
     @Bean
     public IOService ioService(){
-        return new IOServiceImpl(inputStream);
+        return new IOServiceImpl();
     }
 
     @Bean
