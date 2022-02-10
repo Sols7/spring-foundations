@@ -22,6 +22,7 @@
         <module>proxy</module>
         <module>aop</module>
         <module>coffee-app-annotation-based-confog-logging</module>
+        <module>spring-potroshitel</module>
     </modules>
 
     <properties>
